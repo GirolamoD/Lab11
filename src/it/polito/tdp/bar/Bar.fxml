@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.bar.BarController">
-	<!-- TODO Add Nodes -->
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="it.polito.tdp.bar.BarController">
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#doSimula" text="Simula" />
+            <TextArea fx:id="txtResult" editable="false" />
+         </children>
+      </VBox>
+   </center>
 </BorderPane>

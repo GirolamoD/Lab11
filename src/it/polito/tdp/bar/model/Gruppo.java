@@ -8,6 +8,7 @@ public class Gruppo {
 	private int durataPermanenza ;
 	private float tolleranza ;
 	private StatoGruppo stato ;
+	private Tavolo tavolo ;
 	
 	
 	public Gruppo(int numeroPersone, int durataPermanenza, float tolleranza,StatoGruppo s) {
@@ -15,6 +16,7 @@ public class Gruppo {
 		this.durataPermanenza = durataPermanenza;
 		this.tolleranza = tolleranza;
 		this.stato = s ;
+		this.tavolo = null ;
 	}
 
 	public int getNumeroPersone() {
@@ -33,6 +35,14 @@ public class Gruppo {
 		this.stato = s ;
 	}
 
+	public Tavolo getTavolo() {
+		return tavolo;
+	}
+
+	public void setTavolo(Tavolo tavolo) {
+		this.tavolo = tavolo;
+	}
+
 	/**
 	 * Permette di sapere se il gruppo si accomoda al bancone o preferisce andare via
 	 * @param random
@@ -43,6 +53,7 @@ public class Gruppo {
 			return true ;
 		return false ;
 	}
+
 	
 	
 	
